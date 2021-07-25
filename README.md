@@ -13,3 +13,10 @@ Running the app:
 
 OR from the command prompt run below command -->
    mvn spring-boot:run
+
+
+git add README.md
+
+https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/
+
+https://dzone.com/articles/graphql-with-springboot

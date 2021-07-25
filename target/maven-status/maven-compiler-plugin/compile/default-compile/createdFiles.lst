@@ -1,0 +1,7 @@
+com\sample\graphql\modal\Address.class
+com\sample\graphql\resolvers\StudentQueryResolver.class
+com\sample\graphql\resolvers\StudentMutationResolver.class
+com\sample\graphql\service\StudentService.class
+com\sample\graphql\service\StudentServiceImpl.class
+com\sample\graphql\modal\Student.class
+com\sample\graphql\StudentsApp.class

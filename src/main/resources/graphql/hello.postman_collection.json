@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "a66725f9-4fc4-450f-8701-2380f09da6b8",
+		"name": "hello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation createStudent($req: StudentInput) {\r\n  createStudent(input: $req) {\r\n  name\r\n  address {\r\n    city\r\n    zipcode\r\n  }\r\n}\r\n}",
+						"variables": "{\r\n\r\n            \"req\" : {\r\n\r\n                   \"name\": \"Smith\",\r\n\r\n                   \"age\": 30,\r\n\r\n                   \"phone\": \"97123 56731\",\r\n\r\n                  \"address\": {\r\n\r\n                        \"street\": \"1st Main\",\r\n\r\n                        \"city\":   \"Bengaluru\",\r\n\r\n                        \"zipcode\": \"560066\"\r\n\r\n                 }\r\n            }\r\n\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query{\r\n\r\n          student(name:\"Akhil\")  {\r\n          name\r\n          age\r\n          \r\n          }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
