@@ -1,4 +1,5 @@
 com\sample\graphql\modal\Address.class
+com\sample\graphql\modal\Book.class
 com\sample\graphql\resolvers\StudentQueryResolver.class
 com\sample\graphql\resolvers\StudentMutationResolver.class
 com\sample\graphql\service\StudentService.class

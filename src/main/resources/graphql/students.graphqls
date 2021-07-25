@@ -9,6 +9,11 @@ input AddressInput {
      city:   String!,
      zipcode: Int!
 }
+input Book {
+    title: String!,
+    author: String!,
+    pageno: Int!
+}
 
 type Address {
     street: String!,
@@ -23,10 +28,14 @@ type Student {
     address: Address!
 }
 
+
 type Query {
-        student(name:String) : Student;
+        student(name:String) : Student
+        helloStudent(fname : String , lname : String) : String
+        listofBooks(book : Book) : String
+        
 }
 
 type Mutation {
-        createStudent(input: StudentInput) : Student;
+        createStudent(input: StudentInput) : Student
 }
